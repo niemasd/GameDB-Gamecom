@@ -32,7 +32,7 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: data.json
-        asset_name: Game.com.data.json
+        asset_name: Gamecom.data.json
         tag: ${{ steps.tag.outputs.release_tag }}
         overwrite: true
     - name: Upload titles JSON to release
@@ -40,7 +40,7 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: titles.json
-        asset_name: Game.com.titles.json
+        asset_name: Gamecom.titles.json
         tag: ${{ steps.tag.outputs.release_tag }}
         overwrite: true
     - name: Upload complete data TSV to release
@@ -48,7 +48,7 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: data.tsv
-        asset_name: Game.com.data.tsv
+        asset_name: Gamecom.data.tsv
         tag: ${{ steps.tag.outputs.release_tag }}
         overwrite: true
     - name: Upload release date distribution PDF to release
@@ -56,6 +56,6 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: release_dates.pdf
-        asset_name: Game.com.release_dates.pdf
+        asset_name: Gamecom.release_dates.pdf
         tag: ${{ steps.tag.outputs.release_tag }}
         overwrite: true
